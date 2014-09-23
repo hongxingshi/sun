@@ -1,62 +1,5 @@
 <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
   <tr>
-    <td height="124" align="right" valign="bottom" background="<%= image_url('top.jpg') %>" style="padding-bottom:22px;"><a href="#" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.shtableware.com');return false;" >设为主页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#" onClick="window.external.addFavorite('http://www.shtableware.com','武义县盛宏餐具制品厂');return false;" >加入收藏</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;  <a href="en/index.asp" class="STYLE1">English</a>&nbsp;&nbsp;</td>
-  </tr>
-  <tr>
-    <td height="45" align="right" bgcolor="#250C10" style="padding-right:10px;"><table border="0" align="right" cellpadding="0" cellspacing="0">
-      <tr>
-        <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="index.asp" class="t">首页</a></td>
-    <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="about.asp" class="t">公司简介</a></td>
-    <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="product.asp?new=1" class="t">新品推荐</a></td>
-    <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="product.asp" class="t">产品中心</a></td>
-    <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="network.asp" class="t">销售网络</a></td>
-    <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="feedback.asp" class="t">信息反馈</a></td>
-    <td width="100" height="45" align="center"><a href="contact.asp" class="t">联系我们</a></td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-<table width="1003" border="0" align="center" cellpadding="0" cellspacing="0" style="margin-top:17px;">
-  <tr>
-    <td align="center"><script>
-  var NowFrame = 1;
-  var MaxFrame = 3;
-  var bStart = 0;
-  function fnToggle() {
-  var next = NowFrame + 1;
-  if(next == MaxFrame+1) 
-  {
-  NowFrame = MaxFrame;
-  next = 1;
-  }
-  if(bStart == 0)
-  {
-  bStart = 1;
-        
-  setTimeout('fnToggle()', 1000);
-  return;
-  }
-  else
-  {
-  oTransContainer.filters[0].Apply();
-  document.images['oDIV'+next].style.display = "";
-  document.images['oDIV'+NowFrame].style.display = "none"; 
-  oTransContainer.filters[0].Play(duration=5);
-  if(NowFrame == MaxFrame) 
-  NowFrame = 1;
-  else
-  NowFrame++;
-  } setTimeout('fnToggle()', 6000);
-  }
-  fnToggle();
-</script>
-        <!--焦点图片开始-->
-        <div id="oTransContainer" style="FILTER: progid:DXImageTransform.Microsoft.Wipe(GradientSize=1.0, wipeStyle=0, motion='forward'); WIDTH: 1003px; HEIGHT: 426px"><img src="<%= image_url('index_02.jpg')%>" name="oDIV1" width="1003" height="426" border="0" id="oDIV1" style="BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; DISPLAY: yes;  BORDER-LEFT: black 0px solid; BORDER-BOTTOM: black 0px solid" /><img id="oDIV2" style="BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; DISPLAY: none; BORDER-LEFT: black 0px solid; BORDER-BOTTOM: black 0px solid" height="426" src="<%= image_url('index1_02.jpg')%>" width="1003" border="0" /><img id="oDIV3" style="BORDER-RIGHT: black 0px solid; BORDER-TOP: black 0px solid; DISPLAY: none; BORDER-LEFT: black 0px solid; BORDER-BOTTOM: black 0px solid" height="426" src="<%= image_url('index2_02.jpg')%>" width="1003" border="0" /></div>
-    <!--焦点图片结束--></td>
-  </tr>
-</table>
-<table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
     <td width="574" height="225" valign="top"><table width="536" border="0" cellspacing="0" cellpadding="0" style="margin-left:12px;">
       <tr>
         <td><img src="<%= image_url('iabout.jpg')%>" width="536" height="75"></td>
@@ -74,14 +17,4 @@
       </tr>
     </table></td>
   </tr>
-</table>
-<table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
-  <tr>
-    <td><img src="<%= image_url('btmpic.jpg')%>" width="970" height="76"></td>
-  </tr>
-  <tr>
-    <td height="65" align="center">版权所有：武义县盛宏餐具制品厂  地址：中国.浙江.武义县东南工业园区冷水坑<br>
-    电话/TEL:0086-579-87707686  传真/FAX：0086-579-87707685  E-MAIL:<a href="mailto:sun030221@hotmail.com" target="_blank">sun030221@hotmail.com</a>,<a href="mailto:samsun@shtableware.com" target="_blank">samsun@shtableware.com</a></td>
-  </tr>
-  
 </table>

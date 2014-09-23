@@ -1,0 +1,52 @@
+<td width="201" height="225" valign="top">
+  <table width="187" border="0" cellspacing="0" cellpadding="0">
+  <tbody>
+  <tr>
+    <td>
+      <img src="<%= image_url('plist.jpg') %>" width="187">
+    </td>
+  </tr>
+  <tr>
+    <td background="<%= image_url('plistbg.gif') %>">
+      <table width="170" align="center" cellpadding="0" cellspacing="0">
+      <script language="javascript1.2">
+        function showsubmenub(sid)
+        {
+          whichEl = eval("submenub" + sid);
+          if (whichEl.style.display == "none")
+          {
+            eval("submenub" + sid + ".style.display=\"\";");
+          }
+          else
+          {
+            eval("submenub" + sid + ".style.display=\"none\";");
+          }
+        }
+      </script>
+      <script language="javascript1.2">
+        function showsubmenu(sid)
+        {
+          whichEl = eval("submenu" + sid);
+          if (whichEl.style.display == "none")
+          {
+            var countt
+            eval("submenu" + sid + ".style.display=\"\";");
+          }
+          else
+          {
+            eval("submenu" + sid + ".style.display=\"none\";");
+          }
+        }
+      </script>
+      <tbody>
+      </table>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="<%= image_url('plistbtm.jpg') %>" width="187" height="36">
+    </td>
+  </tr>
+  </tbody>
+  </table>
+</td>
