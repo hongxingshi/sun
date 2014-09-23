@@ -10,6 +10,14 @@ Rails.application.routes.draw do
   get 'network', to: 'home#network'
   get 'contact', to: 'home#contact'
 
+  scope "/:locale" do 
+    get '/', to: 'home#index'
+    get 'about', to: 'home#about'
+    get 'feedback', to: 'home#feedback'
+    get 'network', to: 'home#network'
+    get 'contact', to: 'home#contact' 
+  end
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

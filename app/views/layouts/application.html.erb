@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>武义县盛宏餐具制品厂</title>
+  <title><%= I18n.t('Title') %></title>
   <meta http-equiv="Content-Type" content="text/html; charset=gb2312">
-  <meta name="Keywords" content="武义县盛宏餐具制品厂" />
-  <meta name="Description" content="武义县盛宏餐具制品厂" />
+  <meta name="Keywords" content="<%= I18n.t('Title') %>" />
+  <meta name="Description" content="<%= I18n.t('Title') %>" />
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <style type="text/css">
@@ -17,18 +17,18 @@
 <body>
   <table width="970" border="0" align="center" cellpadding="0" cellspacing="0">
     <tr>
-      <td height="102" align="right" valign="bottom" background="<%= image_url('top.jpg') %>" style="padding-bottom:22px;"><a href="#" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.shtableware.com');return false;" >设为主页</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#" onClick="window.external.addFavorite('http://www.shtableware.com','武义县盛宏餐具制品厂');return false;" >加入收藏</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;  <a href="en/index.asp" class="STYLE1">English</a>&nbsp;&nbsp;</td>
+      <td height="102" align="right" valign="bottom" background="<%= image_url('top.jpg') %>" style="padding-bottom:22px;"><a href="#" onClick="this.style.behavior='url(#default#homepage)';this.setHomePage('http://www.shtableware.com');return false;" ><%= I18n.t('Homepage') %></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="#" onClick="window.external.addFavorite('http://www.shtableware.com','<%= I18n.t('Title') %>');return false;" ><%= I18n.t('AddFavourite') %></a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;  <a href="<%= root_url(locale: @tab_locale) %>" class="STYLE1"><%= I18n.t('Language', locale: @tab_locale) %></a>&nbsp;&nbsp;</td>
     </tr>
     <tr>
       <td height="45" align="right" bgcolor="#250C10" style="padding-right:10px;"><table border="0" align="right" cellpadding="0" cellspacing="0">
         <tr>
-          <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="/" class="t">首页</a></td>
-      <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="<%= about_url %>" class="t">公司简介</a></td>
-      <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="product.asp?new=1" class="t">新品推荐</a></td>
-      <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="product.asp" class="t">产品中心</a></td>
-      <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="<%= network_url %>" class="t">销售网络</a></td>
-      <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="<%= feedback_url %>" class="t">信息反馈</a></td>
-      <td width="100" height="45" align="center"><a href="<%= contact_url %>" class="t">联系我们</a></td>
+          <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="<%= root_url %>" class="t"><%= I18n.t('Home') %></a></td>
+      <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="<%= about_url %>" class="t"><%= I18n.t('AboutUs') %></a></td>
+      <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="#" class="t"><%= I18n.t('NewProducts') %></a></td>
+      <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="#" class="t"><%= I18n.t('Products') %></a></td>
+      <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="<%= network_url %>" class="t"><%= I18n.t('Network') %></a></td>
+      <td width="100" height="45" align="center" style="border-right:#7C6D70 1px solid"><a href="<%= feedback_url %>" class="t"><%= I18n.t('Feedback') %></a></td>
+      <td width="100" height="45" align="center"><a href="<%= contact_url %>" class="t"><%= I18n.t('ContactUs') %></a></td>
         </tr>
       </table></td>
     </tr>
@@ -78,7 +78,7 @@
       <td><img src="<%= image_url('btmpic.jpg')%>" width="970" height="76"></td>
     </tr>
     <tr>
-      <td height="65" align="center">版权所有：武义县盛宏餐具制品厂  地址：中国.浙江.武义县东南工业园区冷水坑<br>
+      <td height="65" align="center"><%= I18n.t('Copyright') %>：<%= I18n.t('Title') %>  <%= I18n.t('Add') %>：中国.浙江.武义县东南工业园区冷水坑<br>
       电话/TEL:0086-579-87707686  传真/FAX：0086-579-87707685  E-MAIL:<a href="mailto:sun030221@hotmail.com" target="_blank">sun030221@hotmail.com</a>,<a href="mailto:samsun@shtableware.com" target="_blank">samsun@shtableware.com</a></td>
     </tr> 
   </table>
