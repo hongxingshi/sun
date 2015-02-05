@@ -38,7 +38,6 @@ a.p {
 	
 	font-size: 12px;
 	line-height: 18px;
-	font-weight: ;
 	color: #0D0D0D;
 	text-decoration: none;
 }
@@ -47,7 +46,6 @@ a.p:hover {
 	
 	font-size: 12px;
 	line-height: 18px;
-	font-weight: ;
 	color: #FF0000;
 	text-decoration: none;
 	
@@ -57,7 +55,6 @@ a.t {
   
 	font-size: 14px;
 	line-height: 18px;
-	font-weight: ;
 	color: #ffffff;
 	text-decoration: none;
 }
@@ -65,7 +62,6 @@ a.t:hover {
 	
 	font-size: 14px;
 	line-height: 18px;
-	font-weight: ;
 	color: #FF0000;
 	text-decoration: none;
 	
@@ -78,3 +74,4 @@ select {
 	color: #666666;
 	text-decoration: none;
 }
+
