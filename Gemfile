@@ -1,5 +1,5 @@
-#source 'http://ruby.taobao.org/'
-source 'https://rubygems.org'
+source 'http://ruby.taobao.org/'
+#source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
@@ -41,3 +41,4 @@ gem 'therubyracer'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
+gem 'unicorn'
