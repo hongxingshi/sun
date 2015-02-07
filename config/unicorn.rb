@@ -13,7 +13,7 @@ pid "#{Rails.root}/tmp/pids/unicorn.pid"
 stderr_path "#{Rails.root}/log/unicorn.log"
 stdout_path "#{Rails.root}/log/unicorn.log"
 
-listen 80, :tcp_nopush => false
+listen 8006, :tcp_nopush => false
 
 listen "/tmp/unicorn.sonkwo.sock"
 worker_processes 2
